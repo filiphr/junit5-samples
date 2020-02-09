@@ -28,6 +28,7 @@ class CartesianProductTests {
 	@DisplayName("S ⨯ T ⨯ U")
 	void nFold(String string, Class<?> type, TimeUnit unit, TestInfo info) {
 		assertTrue(string.endsWith("a"));
+		assertTrue(string.startsWith("A"));
 		assertTrue(type.isInterface());
 		assertTrue(unit.name().endsWith("S"));
 		assertTrue(info.getTags().isEmpty());
